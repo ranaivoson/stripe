@@ -1,0 +1,10 @@
+services:
+    application_stripe.stripe:
+        class: Application\StripeBundle\Service\StripeService
+        arguments: [%application_stripe.api_secret_key%]
+
+    application_stripe.stripe.twig_extension:
+        class: Application\StripeBundle\Twig\StripeExtension
+        arguments: [%application_stripe.api_publishable_key%]
+        tags:
+            - { name: twig.extension }

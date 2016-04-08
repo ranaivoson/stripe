@@ -1,0 +1,7 @@
+Application_Stripe_payment:
+    pattern:  /new
+    defaults: { _controller: ApplicationStripeBundle:Payment:newPaymentMethod }
+
+Application_Stripe_valid:
+    pattern:  /valid
+    defaults: { _controller: ApplicationStripeBundle:Payment:valid }
