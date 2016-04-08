@@ -73,4 +73,5 @@ https://stripe.com/docs/tutorials/forms
 ```
 
 ##TODO:
-- you need to create you entity Order
+- you need to create your entity Order with your own logic to charge a payment
+- This is just a example with a default amount

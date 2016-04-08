@@ -22,6 +22,12 @@ class PaymentController extends Controller{
     }
     
     public function validAction(){
+
+//here is your own logic with the entity order
+
+
+
+
         $this->container->get('application_stripe.stripe')->auth();
 
 // Get the credit card details submitted by the form
